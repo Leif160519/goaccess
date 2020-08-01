@@ -2,7 +2,7 @@
 - 官方github地址：https://github.com/allinurl/goaccess
 - 官方demo地址：https://rt.goaccess.io/?20190828082924
 
-![image.png](https://img.hacpai.com/file/2019/09/image-535469fe.png)
+![image.png](images/1.png)
 
 ## 一、前言
 
@@ -79,7 +79,7 @@ yum install -y ncurses-devel
 
 附上各个平台依赖包列表
 
-![image.png](https://img.hacpai.com/file/2019/09/image-bd1fe6f6.png)
+![image.png](images/2.png)
 
 ### 3.ubuntu包管理器安装
 
@@ -277,33 +277,9 @@ goaccess --config-file /usr/local/src/goaccess/goaccess.conf  /var/log/nginx/acc
 
 **效果**
 可以访问本站监控地址：https://leif.fun/goaccess
-![image.png](https://img.hacpai.com/file/2019/09/image-64c509a2.png)
+![image.png](images/3.png)
 
-![image.png](https://img.hacpai.com/file/2019/09/image-32db18f1.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-f0d21dea.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-db08ace7.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-0098dfb4.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-55c4e4d1.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-aeea7678.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-08926381.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-f4e3833f.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-dbffd7db.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-0a587ec6.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-67ed7ea6.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-8e5a8dbd.png)
-
-![image.png](https://img.hacpai.com/file/2019/09/image-ab3aa4ca.png)
+![image.png](images/4.png)
 
 ## 五、设置开机自启
 
@@ -340,7 +316,7 @@ WantedBy=multi-user.target
 ## 六、扩展功能
 
 细心的同学会发现，官网提供的示例上包含了平均响应时，总共响应时和最高响应时，但是依据上述教程操作下来看并没有出现以下内容
-![image.png](https://img.hacpai.com/file/2019/09/image-949be175.png)
+![image.png](images/5.png)
 那是因为nginx中并未配置有关响应时间的日志格式，所以需要在 `nginx.conf`中新增两行配置：
 
 ```
@@ -444,7 +420,7 @@ log_format %h - %^ [%d:%t %^] "%r" %s %b "%R" "%u" "%^" %^ %^ %^ %T
 将上述格式填写到goaccess配置文件中即可
 
 先重启 `nginx`之后再重启 `goaccess`即可
-![image.png](https://img.hacpai.com/file/2019/09/image-0c943a3d.png)
+![image.png](images/6.png)
 
 ## 七、参考
 
